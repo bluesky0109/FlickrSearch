@@ -12,6 +12,7 @@
 		331094A51A3C7B0C0053872C /* RWTViewModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 331094A41A3C7B0C0053872C /* RWTViewModelServicesImpl.m */; };
 		331094A81A3C920C0053872C /* RWTFlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 331094A71A3C920C0053872C /* RWTFlickrPhoto.m */; };
 		331094AB1A3C92CD0053872C /* RWTFlickrSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 331094AA1A3C92CD0053872C /* RWTFlickrSearchResults.m */; };
+		33326DDF1A3DB6EC00FCCF3D /* RWTSearchResultsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33326DDE1A3DB6EC00FCCF3D /* RWTSearchResultsViewModel.m */; };
 		728550B5193E52740032A754 /* CETableViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 728550B4193E52740032A754 /* CETableViewBindingHelper.m */; };
 		72E40170192BFFCE00354806 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E4016F192BFFCE00354806 /* Foundation.framework */; };
 		72E40172192BFFCE00354806 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E40171192BFFCE00354806 /* CoreGraphics.framework */; };
@@ -61,6 +62,8 @@
 		331094A71A3C920C0053872C /* RWTFlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrPhoto.m; sourceTree = SOURCE_ROOT; };
 		331094A91A3C92CD0053872C /* RWTFlickrSearchResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearchResults.h; sourceTree = SOURCE_ROOT; };
 		331094AA1A3C92CD0053872C /* RWTFlickrSearchResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchResults.m; sourceTree = SOURCE_ROOT; };
+		33326DDD1A3DB6EC00FCCF3D /* RWTSearchResultsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTSearchResultsViewModel.h; sourceTree = SOURCE_ROOT; };
+		33326DDE1A3DB6EC00FCCF3D /* RWTSearchResultsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSearchResultsViewModel.m; sourceTree = SOURCE_ROOT; };
 		35EA5CE2E80675143AD1AA0E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		728550B2193E52740032A754 /* CEReactiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEReactiveView.h; sourceTree = "<group>"; };
 		728550B3193E52740032A754 /* CETableViewBindingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETableViewBindingHelper.h; sourceTree = "<group>"; };
@@ -239,6 +242,8 @@
 				3310949B1A3C63D30053872C /* RWTFlickrSearchViewModel.h */,
 				3310949C1A3C63D30053872C /* RWTFlickrSearchViewModel.m */,
 				331094A21A3C78D50053872C /* RWTViewModelServices.h */,
+				33326DDD1A3DB6EC00FCCF3D /* RWTSearchResultsViewModel.h */,
+				33326DDE1A3DB6EC00FCCF3D /* RWTSearchResultsViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -410,6 +415,7 @@
 				72E4017C192BFFCE00354806 /* main.m in Sources */,
 				72E401B9192C03AB00354806 /* RWTSearchResultsViewController.m in Sources */,
 				728550B5193E52740032A754 /* CETableViewBindingHelper.m in Sources */,
+				33326DDF1A3DB6EC00FCCF3D /* RWTSearchResultsViewModel.m in Sources */,
 				72E401B4192C03AB00354806 /* RWTFlickrSearchViewController.m in Sources */,
 				331094A11A3C77E20053872C /* RWTFlickrSearchImpl.m in Sources */,
 				331094A51A3C7B0C0053872C /* RWTViewModelServicesImpl.m in Sources */,
