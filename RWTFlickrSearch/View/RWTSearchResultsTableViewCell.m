@@ -21,6 +21,11 @@
 
 @implementation RWTSearchResultsTableViewCell
 
+- (void)setParallax:(CGFloat)value {
+    self.imageThumbnailView.transform = CGAffineTransformMakeTranslation(0, value);
+}
+
+
 - (void)bindViewModel:(id)viewModel {
     RWTFlickrPhoto *photo = viewModel;
     self.titleLabel.text = photo.title;
