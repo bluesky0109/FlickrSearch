@@ -5,6 +5,7 @@
 
 #import "RWTSearchResultsViewController.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import "CETableViewBindingHelper.h"
 
 @interface RWTSearchResultsViewController ()
 
@@ -12,6 +13,8 @@
 
 
 @property(strong, nonatomic) RWTSearchResultsViewModel *viewModel;
+
+@property(strong, nonatomic) CETableViewBindingHelper *bindingHelper;
 
 @end
 
@@ -22,6 +25,21 @@
         _viewModel = viewModel;
     }
     return self;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self bindViewModel];
+}
+
+- (void)bindViewModel {
+    UINib *nib = [UINib nibWithNibName:@"RWTSearchResultsTableViewCell" bundle:nil];
+    
+    self.bindingHelper =
+      [CETableViewBindingHelper bindingHelperForTableView:self.searchResultsTable
+                                             sourceSignal:RACObserve(self.viewModel, searchResults)
+                                         selectionCommand:nil templateCell:nib];
 }
 
 @end
