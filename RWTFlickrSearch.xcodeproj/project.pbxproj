@@ -10,6 +10,8 @@
 		3310949D1A3C63D30053872C /* RWTFlickrSearchViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3310949C1A3C63D30053872C /* RWTFlickrSearchViewModel.m */; };
 		331094A11A3C77E20053872C /* RWTFlickrSearchImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 331094A01A3C77E20053872C /* RWTFlickrSearchImpl.m */; };
 		331094A51A3C7B0C0053872C /* RWTViewModelServicesImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 331094A41A3C7B0C0053872C /* RWTViewModelServicesImpl.m */; };
+		331094A81A3C920C0053872C /* RWTFlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 331094A71A3C920C0053872C /* RWTFlickrPhoto.m */; };
+		331094AB1A3C92CD0053872C /* RWTFlickrSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 331094AA1A3C92CD0053872C /* RWTFlickrSearchResults.m */; };
 		728550B5193E52740032A754 /* CETableViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 728550B4193E52740032A754 /* CETableViewBindingHelper.m */; };
 		72E40170192BFFCE00354806 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E4016F192BFFCE00354806 /* Foundation.framework */; };
 		72E40172192BFFCE00354806 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E40171192BFFCE00354806 /* CoreGraphics.framework */; };
@@ -55,6 +57,10 @@
 		331094A21A3C78D50053872C /* RWTViewModelServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTViewModelServices.h; sourceTree = SOURCE_ROOT; };
 		331094A31A3C7B0C0053872C /* RWTViewModelServicesImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTViewModelServicesImpl.h; sourceTree = "<group>"; };
 		331094A41A3C7B0C0053872C /* RWTViewModelServicesImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTViewModelServicesImpl.m; sourceTree = "<group>"; };
+		331094A61A3C920C0053872C /* RWTFlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTFlickrPhoto.h; sourceTree = SOURCE_ROOT; };
+		331094A71A3C920C0053872C /* RWTFlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrPhoto.m; sourceTree = SOURCE_ROOT; };
+		331094A91A3C92CD0053872C /* RWTFlickrSearchResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTFlickrSearchResults.h; sourceTree = SOURCE_ROOT; };
+		331094AA1A3C92CD0053872C /* RWTFlickrSearchResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchResults.m; sourceTree = SOURCE_ROOT; };
 		35EA5CE2E80675143AD1AA0E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		728550B2193E52740032A754 /* CEReactiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEReactiveView.h; sourceTree = "<group>"; };
 		728550B3193E52740032A754 /* CETableViewBindingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETableViewBindingHelper.h; sourceTree = "<group>"; };
@@ -243,6 +249,10 @@
 				3310949E1A3C76B70053872C /* RWTFlickrSearch.h */,
 				3310949F1A3C77E20053872C /* RWTFlickrSearchImpl.h */,
 				331094A01A3C77E20053872C /* RWTFlickrSearchImpl.m */,
+				331094A61A3C920C0053872C /* RWTFlickrPhoto.h */,
+				331094A71A3C920C0053872C /* RWTFlickrPhoto.m */,
+				331094A91A3C92CD0053872C /* RWTFlickrSearchResults.h */,
+				331094AA1A3C92CD0053872C /* RWTFlickrSearchResults.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -404,6 +414,8 @@
 				331094A11A3C77E20053872C /* RWTFlickrSearchImpl.m in Sources */,
 				331094A51A3C7B0C0053872C /* RWTViewModelServicesImpl.m in Sources */,
 				3310949D1A3C63D30053872C /* RWTFlickrSearchViewModel.m in Sources */,
+				331094A81A3C920C0053872C /* RWTFlickrPhoto.m in Sources */,
+				331094AB1A3C92CD0053872C /* RWTFlickrSearchResults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

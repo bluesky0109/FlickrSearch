@@ -8,9 +8,9 @@
 
 @interface RWTFlickrSearchViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextField *searchTextField;
-@property (weak, nonatomic) IBOutlet UIButton *searchButton;
-@property (weak, nonatomic) IBOutlet UITableView *searchHistoryTable;
+@property (weak, nonatomic) IBOutlet UITextField             *searchTextField;
+@property (weak, nonatomic) IBOutlet UIButton                *searchButton;
+@property (weak, nonatomic) IBOutlet UITableView             *searchHistoryTable;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingIndicator;
 
 

@@ -12,12 +12,12 @@
 
 @interface RWTFlickrSearchViewModel : NSObject
 
-@property(strong, nonatomic) NSString *searchText;
-@property(strong, nonatomic) NSString *title;
+@property (strong, nonatomic) NSString   *searchText;
+@property (strong, nonatomic) NSString   *title;
 
-@property(strong, nonatomic) RACCommand *executeSearch;
+@property (strong, nonatomic) RACCommand *executeSearch;
 
-
+//暴露一个接口来间接 获取 Model
 - (instancetype)initWithServices:(id<RWTViewModelServices>)services;
 
 @end
