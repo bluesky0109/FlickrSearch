@@ -13,6 +13,7 @@
 		331094A81A3C920C0053872C /* RWTFlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 331094A71A3C920C0053872C /* RWTFlickrPhoto.m */; };
 		331094AB1A3C92CD0053872C /* RWTFlickrSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 331094AA1A3C92CD0053872C /* RWTFlickrSearchResults.m */; };
 		33326DDF1A3DB6EC00FCCF3D /* RWTSearchResultsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33326DDE1A3DB6EC00FCCF3D /* RWTSearchResultsViewModel.m */; };
+		33326DE21A3DCC4D00FCCF3D /* RWTFlickrPhotoMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 33326DE11A3DCC4D00FCCF3D /* RWTFlickrPhotoMetadata.m */; };
 		728550B5193E52740032A754 /* CETableViewBindingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 728550B4193E52740032A754 /* CETableViewBindingHelper.m */; };
 		72E40170192BFFCE00354806 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E4016F192BFFCE00354806 /* Foundation.framework */; };
 		72E40172192BFFCE00354806 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E40171192BFFCE00354806 /* CoreGraphics.framework */; };
@@ -64,6 +65,8 @@
 		331094AA1A3C92CD0053872C /* RWTFlickrSearchResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrSearchResults.m; sourceTree = SOURCE_ROOT; };
 		33326DDD1A3DB6EC00FCCF3D /* RWTSearchResultsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTSearchResultsViewModel.h; sourceTree = SOURCE_ROOT; };
 		33326DDE1A3DB6EC00FCCF3D /* RWTSearchResultsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTSearchResultsViewModel.m; sourceTree = SOURCE_ROOT; };
+		33326DE01A3DCC4D00FCCF3D /* RWTFlickrPhotoMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTFlickrPhotoMetadata.h; sourceTree = SOURCE_ROOT; };
+		33326DE11A3DCC4D00FCCF3D /* RWTFlickrPhotoMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTFlickrPhotoMetadata.m; sourceTree = SOURCE_ROOT; };
 		35EA5CE2E80675143AD1AA0E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		728550B2193E52740032A754 /* CEReactiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEReactiveView.h; sourceTree = "<group>"; };
 		728550B3193E52740032A754 /* CETableViewBindingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CETableViewBindingHelper.h; sourceTree = "<group>"; };
@@ -258,6 +261,8 @@
 				331094A71A3C920C0053872C /* RWTFlickrPhoto.m */,
 				331094A91A3C92CD0053872C /* RWTFlickrSearchResults.h */,
 				331094AA1A3C92CD0053872C /* RWTFlickrSearchResults.m */,
+				33326DE01A3DCC4D00FCCF3D /* RWTFlickrPhotoMetadata.h */,
+				33326DE11A3DCC4D00FCCF3D /* RWTFlickrPhotoMetadata.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -421,6 +426,7 @@
 				331094A51A3C7B0C0053872C /* RWTViewModelServicesImpl.m in Sources */,
 				3310949D1A3C63D30053872C /* RWTFlickrSearchViewModel.m in Sources */,
 				331094A81A3C920C0053872C /* RWTFlickrPhoto.m in Sources */,
+				33326DE21A3DCC4D00FCCF3D /* RWTFlickrPhotoMetadata.m in Sources */,
 				331094AB1A3C92CD0053872C /* RWTFlickrSearchResults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
