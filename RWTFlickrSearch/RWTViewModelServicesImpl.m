@@ -35,7 +35,7 @@
 - (void)pushViewModel:(id)viewModel {
     id viewController;
     
-    if ([viewController isKindOfClass:RWTSearchResultsViewModel.class]) {
+    if ([viewModel isKindOfClass:RWTSearchResultsViewModel.class]) {
         viewController = [[RWTSearchResultsViewController alloc] initWithViewModel:viewModel];
     } else {
         NSLog(@"an unknown ViewModel was pushed");

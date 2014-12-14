@@ -54,6 +54,11 @@
         [self rac_signalForSelector:@selector(flickrAPIRequest:didCompleteWithResponse:)
                        fromProtocol:@protocol(OFFlickrAPIRequestDelegate)];
         
+        // 3.5 Create a signal from the failure delegate method
+        RACSignal *failureSignal =
+        [self rac_signalForSelector:@selector(flickrAPIRequest:didFailWithError:)
+                       fromProtocol:@protocol(OFFlickrAPIRequestDelegate)];
+        
         //4.Handle the response
         [[[successSignal
            map:^id(RACTuple *tuple) {
@@ -63,7 +68,24 @@
            subscribeNext:^(id x) {
                [subscriber sendNext:x];
                [subscriber sendCompleted];
+           }
+           error:^(NSError *error) {
+               NSLog(@"An error occurred: %@", error);
            }];
+        
+        // 4.4. Handle if a response is a failure
+        [[[failureSignal
+           map:^id(RACTuple *tuple) {
+               return @{@"error" : tuple.second};
+           }]
+          map:block]
+         subscribeNext:^(id x) {
+             [subscriber sendNext:x];
+             [subscriber sendCompleted];
+         }
+         error:^(NSError *error) {
+             NSLog(@"An error occurred: %@", error);
+         }];
         
         //5.Make the request
         [flickrRequest callAPIMethodWithGET:method
@@ -103,6 +125,20 @@
                            }];
     
     
+}
+
+- (RACSignal *)flickrImageMetadata:(NSString *)photoIdentifier {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    NSString *currentDateString = [dateFormatter stringFromDate:[NSDate date]];
+    return [self signalFromAPIMethod:@"flickr.stats.getPhotoStats"
+                           arguments:@{@"photo_id": photoIdentifier,
+                                       @"date": currentDateString}
+                           transform:^id(NSDictionary *response) {
+                               NSLog(@"Response: %@", response);
+#warning Do and Return stuff
+                               return nil;
+                           }];
 }
 
 @end
